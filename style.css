@@ -1,0 +1,209 @@
+/* Write some CSS below */
+
+body {
+  background-color: #FFFAFA;
+  margin: 0;
+  padding: 0;
+  color: #FFFAFA;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  color: #F8CEC8;
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: left;
+  color: #000000;
+}
+
+#h2-contenus{
+  color: #F9E1D9;
+}
+
+#h2-formats{
+  color: #F8CEC8;
+}
+
+h3 {
+font-size: 22px;
+color: #FFFAFA;
+}
+
+#eyes{
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url('images/banner.png');
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+  height: 500px;
+}
+
+.banner p{
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 80px;
+  opacity: 0.7;
+}
+
+.banner .btn-pink{
+  font-size: 25px;
+}
+
+.btn-pink {
+  background-color:#F8CEC8;
+   color: #ffffff;
+   border-radius: 4px;
+   padding: 10px 15px;
+   font-size: 15px;
+   font-weight: 700;
+}
+
+.btn-pink:hover{
+  background-color: #ffffff;
+  color: #F8CEC8;
+}
+
+.container {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.card-beige {
+  background-color: #F9E1D9;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.card-beige img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-pink {
+  background-color: #F8CEC8;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 8px;
+  border-radius: 5px;
+}
+.card-pink img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: #F9E1D9;
+  color: #000000;
+  padding: 30px 0;
+}
+
+.footer p {
+  font-size: 15px;
+  text-align: left;
+}
+
+.footer a{
+  padding-left: 10px;
+}
+
+#footer-ig{
+  padding-left: 230px;
+}
+
+.cards-inline-beige{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.cards-inline-pink{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.list-inline{
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline i{
+  font-size: 27px;
+  color: #000000;
+}
+.list-inline i:hover{
+  color: #F8CEC8;
+}
+
+.zoom{
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.zoom:hover{
+ transform:scale(1.1)
+}
+
+/*Breaking Points*/
+@media(max-width:960px){
+  .container{
+    width: 900px;
+  }
+  .cards-inline-beige{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .cards-inline-pink{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width:720px){
+  .container{
+    width: 680px;
+  }
+  .cards-inline-beige{
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards-inline-pink{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width:540px){
+  .container{
+    width: 480px;
+  }
+  .cards-inline-beige{
+    grid-template-columns: 1fr;
+  }
+  .cards-inline-pink{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
